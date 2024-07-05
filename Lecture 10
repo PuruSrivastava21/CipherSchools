@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int i;
+    i=1;
+    cout<<i++;
+    cout<<++i;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i,j,k;
+    i=0;
+    j=0;
+    k=0;
+    cout<<i<<j<<k;
+    j = i++;
+    cout<<i<<j<<k;
+    k=++i;
+    cout<<i<<j<<k;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    
+    for(int i=1;i<=1000;i++){
+        cout<<i<<endl;
+    }
+
+    return 0;
+}
