@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int password;
+    do{
+        cin>>password;
+    }
+    while(password<99999);
+    
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    while(1){
+        cout<<"chocolates"<<endl
+    }
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i;
+    for(i=1;;i++){
+        cout<<i<<endl;
+        if(i>100){
+            break;
+        }
+    }
+    
+}
