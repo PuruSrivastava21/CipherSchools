@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+void printstuff(){
+  cout<<"writing my first function";
+}
+int main(){
+  printstuff();
+return 0;
+}
+
+#include <iostream>
+using namespace std;
+int add(int a, int b){
+  int c = a + b;
+  return c;
+}
+int main(){
+  int a,b;
+  int sum;
+  a,b=3,5;
+  
+  sum= add(a,b);
+  cout<<sum;
+  return 0;
+}
