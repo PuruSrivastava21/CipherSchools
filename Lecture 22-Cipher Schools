@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    int *p;
+    p=&a;
+    a=1;
+    cout<<"The value of a is "<<a<<endl;
+    cout<<"The value of a using pointer is "<<*p<<endl;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    int b;
+    int *p;
+    int *q;
+    p=&a;
+    q=&b;
+    a=1;
+    b=3;
+    int c=*p+*q;
+    cout<<"The value of c is "<<c;
+    return 0;
+}
