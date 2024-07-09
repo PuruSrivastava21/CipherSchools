@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void swap(int , int ){
+  int a;
+  int b;
+  int c;
+  c=a;
+  a=b;
+  b=c;
+  cout<<a<<" "<<b<<endl;
+}
+void fun(int &a, int b){
+  a=99999;
+  b=99999;
+cout<<"The values inside function are: "<<a<<","<<b<<endl;
+}
+int main(){
+  int a=4;
+  int b=6;
+  fun(a,b);
+  cout<<"The values outside function are: "<<a<<","<<b<<endl;
+  return 0;
+}
