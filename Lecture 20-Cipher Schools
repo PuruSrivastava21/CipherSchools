@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main(){
+    long long int a;
+    cout<<"The size of int is "<<sizeof(a)<<endl;
+    int b;
+    cout<<"The size of int is "<<sizeof(b)<<endl;
+    float c;
+    cout<<&a<<" "<<&b<<" "<<&c<<endl;
+    return 0;
+}
