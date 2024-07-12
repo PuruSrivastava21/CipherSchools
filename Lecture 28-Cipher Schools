@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Student{
+     public:
+     int marks;
+     int attendance;
+     string name;
+     void percentage(){
+        cout<<marks<<"%"<<endl;
+     }
+ }; 
+class Bank{
+    public:
+    string name;
+    int cvv;
+    int accno;
+    string user;
+    string pass;
+};
+int main() {
+    Student a ,b ,c;
+    a.marks=90;
+    a.attendance=95;
+    a.name="shikari";
+    a.percentage();
+    Bank m;
+    m.cvv=944;
+    m.accno=1234567890;
+    m.user="pururu";
+    m.pass="poiuytre";
+    cout<<m.pass;
+    return 0;
+}
+
+#include <iostream>
+#include <string>
+using namespace std;
+class Bank{
+    private:
+    int cvv;
+    int accno;
+    string user;
+    string pass;
+    public:
+    string name;
+    void set_cvv(int num){
+        cvv=num;
+    }
+    void get_cvv(){
+        cout<<cvv;
+    }
+};
+int main() {
+    Bank a;
+    a.set_cvv(12354);
+    a.get_cvv();
+    return 0;
+}
