@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+class complex{
+    private:
+    int num1;
+    int num2;
+    public:
+    void set_numbers(int num1,int num2){
+        this->num1=num1;
+        this->num2=num2;
+    }
+    void square(){
+        int c;
+        c=num1*num1;
+        int d;
+        d=num2*num2;
+        cout<<c<<" "<<d<<endl;
+    }
+};
+int main(){
+    complex a;
+    a.set_numbers(2,3);
+    a.square();
+}
+
+#include <iostream>
+using namespace std;
+class account{
+    public:
+    int amt;
+    int days;
+    account(int amti, int dayi){
+        amt=amti;
+        days=dayi;
+        cout<<"Called!"<<endl;
+    }
+    ~account(){
+        cout<<"Done!";
+    }
+};
+int main(){
+    account a(200,5);
+    cout<<"All functions take place here"<<endl;
+}
